@@ -5,6 +5,6 @@ const { getHomeResponse } = require("../server");
 test("GET / responde correctamente", () => {
   const response = getHomeResponse();
 
-  assert.equal(response.status, 500);
+  assert.equal(response.status, 200);
   assert.match(response.body, /Aplicación lista/);
 });
